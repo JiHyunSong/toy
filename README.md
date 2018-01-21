@@ -21,3 +21,47 @@ sbt run
 http://0.0.0.0:9000/
 
 ```
+
+
+# directory 구조
+
+```
+├── README.md
+├── app
+│   ├── Module.scala
+│   ├── controllers
+│   │   ├── AsyncController.scala 
+│   │   ├── CountController.scala
+│   │   └── HomeController.scala
+│   ├── filters
+│   │   └── ExampleFilter.scala 
+│   ├── services
+│   │   ├── ApplicationTimer.scala
+│   │   └── Counter.scala
+│   └── views
+│       ├── index.scala.html
+│       ├── main.scala.html
+│       └── welcome.scala.html
+├── build.sbt
+├── conf
+│   ├── application.conf
+│   ├── logback.xml
+│   └── routes             # API 당 실제 사용될 Controller match
+├── logs
+│   └── application.log
+├── project
+│   ├── build.properties
+│   ├── plugins.sbt
+│   ├── project
+│   └── target
+├── public
+│   ├── images
+│   │   ├── external.png
+│   │   ├── favicon.png
+│   │   └── header-pattern.png
+│   ├── javascripts
+│   │   └── hello.js
+│   └── stylesheets
+│       └── main.css
+└── worksheet
+```
